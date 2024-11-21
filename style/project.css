@@ -1,0 +1,72 @@
+/* banner */
+.banner {
+  background: linear-gradient(to top, #6563b6, #fff);
+}
+
+.main-section {
+  background: transparent;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.image-container img {
+  border-radius: 5px;
+}
+/* bottom */
+.btn-light {
+  background-color: #e0e0e0;
+  color: #333;
+  font-weight: 500;
+  padding: 5px 15px;
+}
+
+.btn-primary {
+  background-color: #4f6ef1;
+  border: none;
+}
+/*  */
+/* Tùy chỉnh card */
+.project-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.project-card .col-md-3 {
+  border-right: 2px solid #b1b1b1; /* Đường kẻ dọc giữa ảnh và thông tin */
+}
+
+.project-card .tech-icons i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.project-card .update-time {
+  font-size: 14px;
+  color: #777;
+}
+
+.project-card hr {
+  border-top: 1px solid #b1b1b1; /* Đường kẻ ngang */
+}
+
+/* Tùy chỉnh nút xem thêm */
+.btn-load-more {
+  margin: 20px 0;
+  padding: 10px 20px;
+  font-size: 18px;
+}

@@ -1,0 +1,197 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+/* sevice card */
+.service-card {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.icon-circle {
+  background-color: #d6c7f9;
+  color: #6a4bb1;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  font-size: 24px;
+}
+/* review */
+.review-card {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+.review-image {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #000;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.carousel-indicators li {
+  background-color: #000;
+}
+
+/* char*/
+
+.my-slider .slick-dots {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  display: flex;
+  justify-content: center; /* Căn giữa các nút bên trong */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.my-slider .slick-dots li {
+  padding: 5px;
+}
+
+.my-slider .slick-dots button {
+  width: 13px;
+  height: 13px;
+  background-color: #ccc;
+  border-radius: 50%;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.my-slider .slick-dots .active button {
+  background-color: #007bff; /* Bootstrap primary color */
+}
+
+/* nhân xét */
+/* Định dạng giao diện */
+.testimonial-container {
+  position: relative;
+  padding: 50px 20px;
+}
+
+.testimonial-card {
+  border: solid 1px #007bff;
+  border-radius: 10px;
+  height: 326.5px;
+}
+
+.testimonial-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.testimonial-card img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.testimonial-carousel-control {
+  width: 40px;
+  height: 40px;
+  color: #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.testimonial-carousel-control-prev {
+  left: -50px;
+}
+
+.testimonial-carousel-control-next {
+  right: -50px;
+}
+
+.slick-dots {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.slick-dots li {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border: 1px solid #007bff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slick-dots li.slick-active {
+  background-color: #0056b3;
+}
+/* Định dạng cho slick-dots */
+.my-slider .slick-dots {
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.my-slider .slick-dots li {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.my-slider .slick-dots li::before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: #ccc;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.my-slider .slick-dots li.active::before {
+  background-color: #007bff; /* Bootstrap primary color */
+}
+.card-body {
+  display: flex;
+  width: 412px;
+  height: 326.5px;
+  padding: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-shrink: 0;
+}
