@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liên hệ</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/contact.css" />
+    <script src="assets/js/include.js" defer></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div data-include="components/header.html"></div>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+      <div class="container">
+        <h1 class="display-4">Liên hệ với AppTech</h1>
+        <p class="lead">
+          Chúng tôi luôn sẵn sàng hỗ trợ bạn. Hãy để lại thông tin và chúng tôi
+          sẽ liên hệ ngay!
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <div class="container">
+        <div class="row g-5">
+          <!-- Contact Form -->
+          <div class="col-12 col-lg-7">
+            <div class="form-box">
+              <h3 class="text-center mb-4">Gửi tin nhắn cho chúng tôi</h3>
+              <form>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Họ và tên"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Số điện thoại"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    rows="4"
+                    placeholder="Nội dung"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                  Gửi tin nhắn
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="col-12 col-lg-5">
+            <div class="info-box">
+              <h3 class="text-center mb-4">Thông tin liên hệ</h3>
+              <ul class="list-unstyled">
+                <li><i class="bi bi-telephone-fill"></i> (+84) 08999999990</li>
+                <li>
+                  <i class="bi bi-envelope-fill"></i> Apptech_null@gmail.com
+                </li>
+                <li>
+                  <i class="bi bi-geo-alt-fill"></i> Xã Mặt Trời, Huyện Địa Cầu,
+                  Tỉnh Châu Á
+                </li>
+              </ul>
+              <div class="social-icons d-flex justify-content-center">
+                <a href="#" class="text-white">
+                  <i class="bi bi-facebook"></i>
+                </a>
+                <a href="#" class="text-white">
+                  <i class="bi bi-twitter"></i>
+                </a>
+                <a href="#" class="text-white">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div data-include="components/footer.html"></div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

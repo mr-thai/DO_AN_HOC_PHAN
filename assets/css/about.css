@@ -1,12 +1,12 @@
 body {
   font-family: "Inter", sans-serif;
 }
-/* sevice card */
+/* *sevice card */
 .service-card {
   background-color: #f8f9fa;
   border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.25rem;
+  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.3s;
 }
@@ -24,37 +24,36 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  margin: 0 auto 15px;
+  margin: 0 auto 1rem;
   font-size: 24px;
 }
-/* review */
-.review-card {
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  background-color: #f9f9f9;
-  text-align: center;
-}
-.review-image {
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  margin-bottom: 10px;
-}
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: #000;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-}
-.carousel-indicators li {
-  background-color: #000;
+
+@media (max-width: 768px) {
+  .service-card {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .icon-circle {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    margin-bottom: 0.75rem;
+  }
+
+  .service-card h5 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .service-card p {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+    line-height: 1.4;
+  }
 }
 
-/* char*/
+/* *char*/
 
 .my-slider .slick-dots {
   position: absolute;
@@ -63,7 +62,7 @@ body {
   transform: translateX(-50%);
   z-index: 1;
   display: flex;
-  justify-content: center; /* Căn giữa các nút bên trong */
+  justify-content: center;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -86,8 +85,7 @@ body {
   background-color: #007bff; /* Bootstrap primary color */
 }
 
-/* nhân xét */
-/* Định dạng giao diện */
+/* *nhân xét */
 .testimonial-container {
   position: relative;
   padding: 50px 20px;
@@ -153,7 +151,7 @@ body {
 .slick-dots li.slick-active {
   background-color: #0056b3;
 }
-/* Định dạng cho slick-dots */
+
 .my-slider .slick-dots {
   bottom: -15px;
   left: 50%;
@@ -194,4 +192,63 @@ body {
   align-items: flex-start;
   gap: 40px;
   flex-shrink: 0;
+}
+
+/* *review-banner */
+.review-banners {
+  width: 100%;
+  background: #dedede;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.review-container {
+  padding: 10px 20px 50px;
+}
+
+.review-banners__title {
+  margin: 32px 0px 20px;
+  color: #25282b;
+  font-weight: 700;
+  line-height: 58px;
+}
+
+.about-section__content {
+  margin: 32px 20px 20px;
+  color: #52575c;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26.72px;
+}
+
+.testimonial-card {
+  border: 1px solid #007bff;
+  border-radius: 10px;
+  height: 326.5px;
+}
+
+.testimonial-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.testimonial-card img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.card-body {
+  width: 100%;
+  height: 300px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  align-items: flex-start;
 }

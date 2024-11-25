@@ -1,0 +1,206 @@
+/* banner */
+.banner {
+  background: linear-gradient(to top, #6563b6, #fff);
+}
+
+.main-section {
+  background: transparent;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.image-container img {
+  border-radius: 5px;
+}
+
+/* bottom */
+.filter-btn {
+  background: linear-gradient(135deg, #ffffff, #e3f2fd); /* Gradient nhạt */
+  border: none;
+  color: #333;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hiệu ứng nổi */
+}
+
+.filter-btn:hover {
+  background: linear-gradient(
+    135deg,
+    #bbdefb,
+    #90caf9
+  ); /* Gradient khi hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow đậm hơn khi hover */
+  transform: translateY(-2px); /* Hiệu ứng nâng nút */
+}
+
+.filter-btn.active {
+  background: linear-gradient(
+    135deg,
+    #2196f3,
+    #1976d2
+  ); /* Màu gradient khi active */
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow mạnh hơn khi active */
+}
+
+/* CSS cho cuộn ngang trên điện thoại */
+.filter-container.overflow-auto {
+  white-space: nowrap;
+  padding-bottom: 8px;
+}
+
+.filter-container.overflow-auto .filter-btn {
+  display: inline-block;
+}
+
+/* Thanh tìm kiếm */
+.search-input {
+  border-radius: 20px;
+  padding: 10px 15px;
+  width: 100%;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #add8e6; /* Xanh dương nhạt */
+  box-shadow: 0 0 8px rgba(173, 216, 230, 0.7);
+}
+
+/* *Tùy chỉnh card */
+/* Chung cho các thẻ project-card */
+.project-card {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.project-card.hidden {
+  display: none; /* Ẩn thẻ khi lớp .hidden được áp dụng */
+}
+
+.project-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Cải thiện phần tech-icons */
+.tech-icons i {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.tech-icons i:hover {
+  transform: scale(1.1);
+}
+
+/* Cải thiện phần update-time */
+.update-time {
+  font-size: 0.9rem;
+  color: #888;
+  display: flex;
+  align-items: center;
+}
+
+.update-time i {
+  margin-right: 5px;
+  color: gray;
+}
+
+/* Phần project-info */
+.project-info h5 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.project-info p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Trung tâm và canh giữa */
+.text-center {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Hiệu ứng khi di chuột vào card */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* CSS cho các icon công nghệ */
+.tech-icons i {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.tech-icons i:hover {
+  transform: scale(1.1);
+}
+
+/* Thêm hiệu ứng cho các project-card */
+.project-card {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.project-card h5 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.update-time {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Media query cho responsive design */
+@media (max-width: 768px) {
+  .project-card {
+    flex-direction: column; /* Cột dọc cho các thẻ trên màn hình nhỏ */
+    align-items: center;
+  }
+
+  .project-img img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .tech-icons {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+
+  .update-time {
+    font-size: 0.8rem;
+  }
+}

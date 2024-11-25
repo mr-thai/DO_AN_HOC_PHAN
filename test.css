@@ -1,0 +1,84 @@
+/* Con trỏ mặc định khi di chuột vào trang */
+body {
+  cursor: url("assets/cursors/01-Normal.ani"), auto;
+}
+
+/* Khi hover vào liên kết */
+a:hover {
+  cursor: url("assets/cursors/02-Link.ani"), pointer;
+}
+
+/* Khi đang load hoặc chờ tải */
+.loading {
+  cursor: url("assets/cursors/03-Loading.ani"), wait;
+}
+
+/* Khi di chuột vào vùng trợ giúp */
+.help-area {
+  cursor: url("assets/cursors/04-Help.ani"), help;
+}
+
+/* Khi di chuột vào vùng text (chọn văn bản) */
+textarea,
+input[type="text"] {
+  cursor: url("assets/cursors/05-Text Select.ani"), text;
+}
+
+/* Khi di chuột vào vùng chọn văn bản */
+::selection {
+  cursor: url("assets/cursors/05-Text Select Alt.ani"), text;
+}
+
+/* Khi di chuột vào vùng chữ viết */
+.handwriting-area {
+  cursor: url("assets/cursors/06-Handwriting.ani"), text;
+}
+
+/* Khi di chuột vào vùng chọn Precision (precision cursor) */
+.precision-area {
+  cursor: url("assets/cursors/07-Precision.ani"), crosshair;
+}
+
+/* Khi không thể thực hiện thao tác (unavailable) */
+.unavailable {
+  cursor: url("assets/cursors/08-Unavailable.ani"), not-allowed;
+}
+
+/* Khi di chuột vào vùng chọn vị trí */
+.location-select {
+  cursor: url("assets/cursors/09-Location Select.ani"), move;
+}
+
+/* Khi di chuột vào vùng chọn người */
+.person-select {
+  cursor: url("assets/cursors/10-Person Select.ani"), pointer;
+}
+
+/* Khi resize theo chiều dọc */
+.vertical-resize {
+  cursor: url("assets/cursors/11-Vertical Resize.ani"), ns-resize;
+}
+
+/* Khi resize theo chiều ngang */
+.horizontal-resize {
+  cursor: url("assets/cursors/12-Horizontal Resize.ani"), ew-resize;
+}
+
+/* Khi resize theo góc chéo (diagonal) */
+.diagonal-resize-1 {
+  cursor: url("assets/cursors/13-Diagonal Resize 1.ani"), nwse-resize;
+}
+
+.diagonal-resize-2 {
+  cursor: url("assets/cursors/14-Diagonal Resize 2.ani"), nesw-resize;
+}
+
+/* Khi di chuột vào vùng di chuyển (move) */
+.move-area {
+  cursor: url("assets/cursors/15-Move.ani"), move;
+}
+
+/* Khi chọn vùng chọn khác */
+.alternate-select {
+  cursor: url("assets/cursors/16-Alternate Select.ani"), crosshair;
+}
