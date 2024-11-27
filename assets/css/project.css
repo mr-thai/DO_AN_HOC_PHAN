@@ -3,72 +3,10 @@
   background: linear-gradient(to top, #6563b6, #fff);
 }
 
-.main-section {
-  background: transparent;
-}
-
 .image-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
-  border-radius: 15px;
-}
-
-.image-container img {
-  border-radius: 5px;
-}
-
-/* bottom */
-.filter-btn {
-  background: linear-gradient(135deg, #ffffff, #e3f2fd); /* Gradient nhạt */
-  border: none;
-  color: #333;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hiệu ứng nổi */
-}
-
-.filter-btn:hover {
-  background: linear-gradient(
-    135deg,
-    #bbdefb,
-    #90caf9
-  ); /* Gradient khi hover */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow đậm hơn khi hover */
-  transform: translateY(-2px); /* Hiệu ứng nâng nút */
-}
-
-.filter-btn.active {
-  background: linear-gradient(
-    135deg,
-    #2196f3,
-    #1976d2
-  ); /* Màu gradient khi active */
-  color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow mạnh hơn khi active */
-}
-
-/* CSS cho cuộn ngang trên điện thoại */
-.filter-container.overflow-auto {
-  white-space: nowrap;
-  padding-bottom: 8px;
-}
-
-.filter-container.overflow-auto .filter-btn {
-  display: inline-block;
-}
-
-/* Thanh tìm kiếm */
-.search-input {
-  border-radius: 20px;
-  padding: 10px 15px;
-  width: 100%;
-}
-
-.search-input:focus {
-  outline: none;
-  border-color: #add8e6; /* Xanh dương nhạt */
-  box-shadow: 0 0 8px rgba(173, 216, 230, 0.7);
 }
 
 /* *Tùy chỉnh card */

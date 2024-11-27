@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dịch vụ của Apptech</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+    />
+
+    <script src="../assets/js/searchAndFilter.js" defer></script>
+    <script src="../assets/js/include.js" defer></script>
+    <style>
+      .filter-btn {
+        background: linear-gradient(
+          135deg,
+          #ffffff,
+          #e3f2fd
+        ); /* Gradient nhạt */
+        border: none;
+        color: #333;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hiệu ứng nổi */
+      }
+
+      .filter-btn:hover {
+        background: linear-gradient(
+          135deg,
+          #bbdefb,
+          #90caf9
+        ); /* Gradient khi hover */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow đậm hơn khi hover */
+      }
+
+      .filter-btn.active {
+        background: linear-gradient(
+          135deg,
+          #2196f3,
+          #1976d2
+        ); /* Màu gradient khi active */
+        color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow mạnh hơn khi active */
+      }
+
+      /* CSS cho cuộn ngang trên điện thoại */
+      .filter-container.overflow-auto {
+        white-space: nowrap;
+        padding-bottom: 8px;
+      }
+
+      .filter-container.overflow-auto .filter-btn {
+        display: inline-block;
+      }
+
+      /* Thanh tìm kiếm */
+      .search-input {
+        border-radius: 20px;
+        padding: 10px 15px;
+        width: 100%;
+      }
+
+      .search-input:focus {
+        outline: none;
+        border-color: #add8e6; /* Xanh dương nhạt */
+        box-shadow: 0 0 8px rgba(173, 216, 230, 0.7);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- *bảng các thuộc tính project -->
+    <div class="container mt-4">
+      <br />
+      <div class="container-fluid">
+        <!-- Thanh tìm kiếm (dùng chung cho máy tính và điện thoại) -->
+        <div class="search-container mb-3">
+          <input
+            type="text"
+            class="form-control search-input"
+            placeholder="Tìm kiếm dự án"
+          />
+        </div>
+
+        <!-- Bộ lọc cho máy tính -->
+        <div class="filter-container d-none d-md-flex flex-wrap gap-2">
+          <button
+            class="btn btn-outline-secondary filter-btn active"
+            role="button"
+            data-filter="all"
+          >
+            Tất cả
+          </button>
+          <button
+            class="btn btn-outline-secondary filter-btn"
+            role="button"
+            data-filter="suc-khoe"
+          >
+            Sức khỏe
+          </button>
+          <button
+            class="btn btn-outline-secondary filter-btn"
+            role="button"
+            data-filter="thoi-quen"
+          >
+            Thói quen
+          </button>
+          <button
+            class="btn btn-outline-secondary filter-btn"
+            role="button"
+            data-filter="ai"
+          >
+            AI
+          </button>
+          <button
+            class="btn btn-outline-secondary filter-btn"
+            role="button"
+            data-filter="quan-ly"
+          >
+            Quản lý
+          </button>
+          <button
+            class="btn btn-outline-secondary filter-btn"
+            role="button"
+            data-filter="cong-nghe"
+          >
+            Công nghệ
+          </button>
+          <button
+            class="btn btn-outline-secondary filter-btn"
+            role="button"
+            data-filter="giai-tri"
+          >
+            Giải trí
+          </button>
+          <button
+            class="btn btn-outline-secondary filter-btn"
+            role="button"
+            data-filter="the-thao"
+          >
+            Thể thao
+          </button>
+          <button
+            class="btn btn-outline-secondary filter-btn"
+            role="button"
+            data-filter="kinh-te"
+          >
+            Kinh tế
+          </button>
+          <!-- Thêm các nút mới -->
+          <button
+            class="btn btn-outline-secondary filter-btn"
+            role="button"
+            data-filter="lap-trinh"
+          >
+            Lập trình
+          </button>
+          <button
+            class="btn btn-outline-secondary filter-btn"
+            role="button"
+            data-filter="du-lich"
+          >
+            Du lịch
+          </button>
+          <button
+            class="btn btn-outline-secondary filter-btn"
+            role="button"
+            data-filter="am-thuc"
+          >
+            Ẩm thực
+          </button>
+
+          <button
+            class="btn btn-outline-secondary filter-btn"
+            role="button"
+            data-filter="phim-anh"
+          >
+            Phim ảnh
+          </button>
+          <button
+            class="btn btn-outline-secondary filter-btn"
+            role="button"
+            data-filter="sach"
+          >
+            Sách
+          </button>
+        </div>
+        <!-- Bộ lọc cho điện thoại -->
+        <div class="filter-container d-flex d-md-none gap-2 overflow-auto">
+          <button
+            class="btn btn-outline-secondary filter-btn active"
+            role="button"
+            data-filter="all"
+          >
+            Tất cả
+          </button>
+          <button
+            class="btn btn-outline-secondary filter-btn"
+            role="button"
+            data-filter="suc-khoe"
+          >
+            Sức khỏe
+          </button>
+          <button
+            class="btn btn-outline-secondary filter-btn"
+            role="button"
+            data-filter="thoi-quen"
+          >
+            Thói quen
+          </button>
+          <button
+            class="btn btn-outline-secondary filter-btn"
+            role="button"
+            data-filter="ai"
+          >
+            AI
+          </button>
+          <button
+            class="btn btn-outline-secondary filter-btn"
+            role="button"
+            data-filter="quan-ly"
+          >
+            Quản lý
+          </button>
+          <button
+            class="btn btn-outline-secondary filter-btn"
+            role="button"
+            data-filter="cong-nghe"
+          >
+            Công nghệ
+          </button>
+          <button
+            class="btn btn-outline-secondary filter-btn"
+            role="button"
+            data-filter="giai-tri"
+          >
+            Giải trí
+          </button>
+          <button
+            class="btn btn-outline-secondary filter-btn"
+            role="button"
+            data-filter="the-thao"
+          >
+            Thể thao
+          </button>
+          <button
+            class="btn btn-outline-secondary filter-btn"
+            role="button"
+            data-filter="kinh-te"
+          >
+            Kinh tế
+          </button>
+          <!-- Thêm các nút mới -->
+
+          <button
+            class="btn btn-outline-secondary filter-btn"
+            role="button"
+            data-filter="lap-trinh"
+          >
+            Lập trình
+          </button>
+          <button
+            class="btn btn-outline-secondary filter-btn"
+            role="button"
+            data-filter="du-lich"
+          >
+            Du lịch
+          </button>
+
+          <button
+            class="btn btn-outline-secondary filter-btn"
+            role="button"
+            data-filter="nghe-thuat"
+          >
+            Nghệ thuật
+          </button>
+          <button
+            class="btn btn-outline-secondary filter-btn"
+            role="button"
+            data-filter="phim-anh"
+          >
+            Phim ảnh
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

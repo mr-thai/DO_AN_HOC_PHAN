@@ -1,103 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dịch vụ của Apptech</title>
+    <title>Apptech - Đăng ký</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/css/signup.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
     <script src="assets/js/include.js" defer></script>
-    <style>
-      .signup-container {
-        max-width: 400px;
-        margin: 50px auto;
-        padding: 20px;
-        text-align: center;
-        background-color: #ffffff;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      }
-      .signup-container h3 {
-        font-weight: bold;
-        margin-bottom: 10px;
-      }
-      .btn-signup {
-        width: 100%;
-        background-color: #c4c4c4;
-        color: #ffffff;
-        margin-top: 20px;
-        padding: 10px;
-        font-weight: bold;
-        border-radius: 100px;
-      }
-      .text-muted a {
-        text-decoration: none;
-        color: inherit;
-      }
-      .text-muted a:hover {
-        text-decoration: underline;
-      }
-    </style>
+    <link rel="stylesheet" href="assets/css/signup.css" />
   </head>
   <body>
-    <!-- *nav -->
     <div data-include="components/header.html"></div>
+    <div class="form-signup">
+      <div class="signup-container">
+        <div class="signup-header mb-3">
+          <i class="bi bi-person-circle"></i> Đăng ký tài khoản
+        </div>
+        <div class="signup-body">
+          <form>
+            <!-- Email Input -->
+            <div class="form-group">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder=" "
+                required
+              />
+              <label for="email" class="floating-label">Email</label>
+            </div>
 
-    <!-- *form nhập signup -->
-    <div class="signup-container">
-      <h3>Tạo tài khoản</h3>
-      <p class="text-muted">
-        Bạn đã có tài khoản? <a href="login.html">Log in</a>
-      </p>
+            <!-- Password Input -->
+            <div class="form-group">
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                placeholder=" "
+                required
+              />
+              <label for="password" class="floating-label">Mật khẩu</label>
+            </div>
 
-      <form>
-        <div class="mb-3 text-start">
-          <label for="name" class="form-label">Tên gọi của bạn</label>
-          <input
-            type="text"
-            class="form-control"
-            id="name"
-            placeholder="Nhập tên của bạn"
-          />
+            <!-- Confirm Password Input -->
+            <div class="form-group">
+              <input
+                type="password"
+                class="form-control"
+                id="confirmPassword"
+                placeholder=" "
+                required
+              />
+              <label for="confirmPassword" class="floating-label"
+                >Xác nhận mật khẩu</label
+              >
+            </div>
+            <p class="text-muted">
+              Bạn đã có tài khoản? <a href="login.html">Log in</a>
+            </p>
+            <!-- Submit Button -->
+            <button type="submit" class="btn-signup">Đăng ký</button>
+          </form>
         </div>
-        <div class="mb-3 text-start">
-          <label for="email" class="form-label">Email</label>
-          <input
-            type="email"
-            class="form-control"
-            id="email"
-            placeholder="Nhập email của bạn"
-          />
-        </div>
-        <div class="mb-3 text-start">
-          <label for="password" class="form-label">Tạo mật khẩu</label>
-          <div class="input-group">
-            <input
-              type="password"
-              class="form-control"
-              id="password"
-              placeholder="Nhập mật khẩu của bạn"
-            />
-            <span class="input-group-text bg-white"
-              ><i class="bi bi-eye-slash"></i
-            ></span>
-          </div>
-        </div>
-        <button type="submit" class="btn btn-signup">Tạo tài khoản</button>
-      </form>
+      </div>
     </div>
-
-    <!-- *footer -->
     <div data-include="components/footer.html"></div>
-
-    <!-- script -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
-    />
   </body>
 </html>

@@ -1,29 +1,105 @@
+/* Global Styles (Same as Login) */
+.form-signup {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to bottom, #ffffff, #cce7ff);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
 .signup-container {
   max-width: 400px;
-  margin: 50px auto;
-  padding: 20px;
-  text-align: center;
+  width: 100%;
   background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
 }
-.signup-container h3 {
+
+.signup-header {
+  background: #007bff;
+  padding: 20px 0;
+  color: #ffffff;
+  font-size: 24px;
   font-weight: bold;
-  margin-bottom: 10px;
 }
+
+.signup-header i {
+  font-size: 30px;
+  margin-right: 8px;
+}
+
+.signup-body {
+  padding: 20px;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  padding-left: 35px;
+  border: 2px solid #cce7ff;
+  border-radius: 10px;
+  font-size: 14px;
+  text-align: left;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
+}
+
+.floating-label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 14px;
+  transition: 0.3s ease;
+  color: #007bff;
+}
+
+.form-control:focus ~ .floating-label,
+.form-control:not(:placeholder-shown) ~ .floating-label {
+  top: -15px;
+  font-size: 12px;
+  color: #007bff;
+}
+
 .btn-signup {
   width: 100%;
-  background-color: #c4c4c4;
-  color: #ffffff;
-  margin-top: 20px;
   padding: 10px;
+  background: #007bff;
+  color: #fff;
   font-weight: bold;
-  border-radius: 100px;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.3s ease;
 }
-.text-muted a {
-  text-decoration: none;
-  color: inherit;
+
+.btn-signup:hover {
+  background: #0056b3;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.4);
 }
-.text-muted a:hover {
-  text-decoration: underline;
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-13px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
