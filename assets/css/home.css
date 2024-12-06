@@ -1,9 +1,13 @@
 body {
   font-family: "inter", sans-serif;
+  background: linear-gradient(to bottom, #ffffff, #e6f7ff, #cceeff, #a9e1fc);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 /* *banner-hero */
 .hero-section {
+  background-image: url("../img/banner/banner_big/home/hero-section.jpg");
   position: relative;
   color: white;
   background-size: cover;
@@ -102,14 +106,22 @@ body {
 
 .section-about__botton {
   margin: 20px 0 0 0;
-  background: rgba(0, 90, 255, 0.96);
+  background: linear-gradient(135deg, #4facfe, #0056b3);
   border-radius: 50px;
   border: none;
   transition: background-color 0.3s ease-in-out;
 }
 
 .section-about__botton:hover {
-  background-color: #004494;
+  background: linear-gradient(135deg, #0056b3, #4facfe);
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(79, 172, 254, 0.6);
+  cursor: pointer;
+}
+
+.section-about__botton:active {
+  transform: scale(0.98);
+  box-shadow: 0 4px 10px rgba(79, 172, 254, 0.3);
 }
 
 @media (max-width: 768px) {
@@ -256,10 +268,23 @@ body {
 
 .infrastructure-banner__bottom {
   margin: 20px 0 0 0;
-  width: 208px;
+  width: 190px;
   height: 44px;
   font-size: 24px;
   border-radius: 81px;
+  background: linear-gradient(135deg, #4facfe, #0056b3);
+}
+
+.infrastructure-banner__bottom:hover {
+  background: linear-gradient(135deg, #0056b3, #4facfe);
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(79, 172, 254, 0.6);
+  cursor: pointer;
+}
+
+.infrastructure-banner__bottom:active {
+  transform: scale(0.98);
+  box-shadow: 0 4px 10px rgba(79, 172, 254, 0.3);
 }
 
 .infrastructure-banner__img {
@@ -294,7 +319,9 @@ body {
   }
 
   .infrastructure-banner__bottom {
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 .software-banners {
@@ -317,7 +344,6 @@ body {
   flex-shrink: 0;
 }
 .software-banners__content {
-  color: #000;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -333,15 +359,24 @@ body {
 }
 .software-banners__botton {
   margin: 20px 0 0 0;
-  background: rgba(0, 90, 255, 0.96);
+  background: linear-gradient(135deg, #4facfe, #0056b3);
   border-radius: 50px;
   border: none;
   transition: background-color 0.3s ease-in-out;
 }
 
 .software-banners__botton:hover {
-  background-color: #004494;
+  background: linear-gradient(135deg, #0056b3, #4facfe);
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(79, 172, 254, 0.6);
+  cursor: pointer;
 }
+
+.software-banners__botton:active {
+  transform: scale(0.98);
+  box-shadow: 0 4px 10px rgba(79, 172, 254, 0.3);
+}
+
 @media (max-width: 768px) {
   .software-banners {
     flex-direction: column-reverse;

@@ -1,6 +1,15 @@
+body {
+  background: linear-gradient(to bottom, #ffffff, #e6f7ff, #cceeff, #b3e6ff);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
 /* banner */
 .banner {
   background: linear-gradient(to top, #6563b6, #fff);
+}
+
+.main-section {
+  min-height: 80vh;
 }
 
 .image-container {
