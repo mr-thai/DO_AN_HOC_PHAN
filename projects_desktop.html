@@ -23,7 +23,6 @@
   <body>
     <!-- *nav -->
     <div data-include="components/header.html"></div>
-
     <!-- *banner chính -->
     <div class="banner">
       <section class="main-section d-flex align-items-center text-dark">
@@ -57,7 +56,10 @@
     <div data-include="components/searchAndFilter.html"></div>
     <!-- *các thẻ project -->
     <div class="container my-5">
-      <div class="project-item desktop quan-ly cong-nghe">
+      <div
+        class="project-item desktop quan-ly cong-nghe"
+        onclick="location.href='oneProject.html';"
+      >
         <div class="row project-card card-hover">
           <div class="col-md-3">
             <img
@@ -301,10 +303,7 @@
         </div>
       </div>
     </div>
-
     <!-- *footer -->
     <div data-include="components/footer.html"></div>
-
-    <!-- *script -->
   </body>
 </html>

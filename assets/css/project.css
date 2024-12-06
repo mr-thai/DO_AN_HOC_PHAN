@@ -3,107 +3,80 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
-/* banner */
 .banner {
   background: linear-gradient(to top, #6563b6, #fff);
 }
-
 .main-section {
   min-height: 80vh;
 }
-
 .image-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-/* *Tùy chỉnh card */
 .project-item {
   cursor: pointer;
 }
-/* Chung cho các thẻ project-card */
 .project-card {
   display: flex;
   margin-bottom: 20px;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
 .project-card.hidden {
-  display: none; /* Ẩn thẻ khi lớp .hidden được áp dụng */
+  display: none;
 }
-
 .project-img img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
-
-/* Cải thiện phần tech-icons */
 .tech-icons i {
   font-size: 1.5rem;
   margin-right: 10px;
   transition: transform 0.3s ease;
 }
-
 .tech-icons i:hover {
   transform: scale(1.1);
 }
-
-/* Cải thiện phần update-time */
 .update-time {
   font-size: 0.9rem;
   color: #888;
   display: flex;
   align-items: center;
 }
-
 .update-time i {
   margin-right: 5px;
   color: gray;
 }
-
-/* Phần project-info */
 .project-info h5 {
   font-size: 1.2rem;
   font-weight: bold;
 }
-
 .project-info p {
   font-size: 1rem;
   line-height: 1.5;
   color: #555;
 }
-
-/* Trung tâm và canh giữa */
 .text-center {
   margin-top: 20px;
   text-align: center;
 }
-
-/* Hiệu ứng khi di chuột vào card */
 .card-hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .card-hover:hover {
   transform: scale(1.05);
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 }
-
-/* CSS cho các icon công nghệ */
 .tech-icons i {
   font-size: 1.5rem;
   margin-right: 10px;
   transition: transform 0.3s ease;
 }
-
 .tech-icons i:hover {
   transform: scale(1.1);
 }
-
-/* Thêm hiệu ứng cho các project-card */
 .project-card {
   margin-bottom: 20px;
   background-color: #fff;
@@ -111,32 +84,26 @@ body {
   padding: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 .project-card img {
   width: 100%;
   border-radius: 8px;
 }
-
 .project-card h5 {
   font-size: 1.2rem;
   font-weight: bold;
   margin-top: 10px;
 }
-
 .project-card p {
   font-size: 1rem;
   color: #555;
 }
-
 .update-time {
   font-size: 0.9rem;
   color: #888;
 }
-
-/* Media query cho responsive design */
 @media (max-width: 768px) {
   .project-card {
-    flex-direction: column; /* Cột dọc cho các thẻ trên màn hình nhỏ */
+    flex-direction: column;
     align-items: center;
   }
 

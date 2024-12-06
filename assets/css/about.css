@@ -4,7 +4,6 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
-/* *sevice card */
 .service-card {
   background-color: #f8f9fa;
   border-radius: 10px;
@@ -13,11 +12,9 @@ body {
   text-align: center;
   transition: transform 0.3s;
 }
-
 .service-card:hover {
   transform: translateY(-5px);
 }
-
 .icon-circle {
   background-color: #d6c7f9;
   color: #6a4bb1;
@@ -30,7 +27,6 @@ body {
   margin: 0 auto 1rem;
   font-size: 24px;
 }
-
 @media (max-width: 768px) {
   .service-card {
     padding: 1rem;
@@ -55,9 +51,6 @@ body {
     line-height: 1.4;
   }
 }
-
-/* *char*/
-
 .my-slider .slick-dots {
   position: absolute;
   bottom: -15px;
@@ -70,11 +63,9 @@ body {
   padding: 0;
   margin: 0;
 }
-
 .my-slider .slick-dots li {
   padding: 5px;
 }
-
 .my-slider .slick-dots button {
   width: 13px;
   height: 13px;
@@ -83,34 +74,27 @@ body {
   border: none;
   transition: background-color 0.3s;
 }
-
 .my-slider .slick-dots .active button {
-  background-color: #007bff; /* Bootstrap primary color */
+  background-color: #007bff;
 }
-
-/* *nhân xét */
 .testimonial-container {
   position: relative;
   padding: 50px 20px;
 }
-
 .testimonial-card {
   border: solid 1px #007bff;
   border-radius: 10px;
   height: 326.5px;
 }
-
 .testimonial-card p {
   font-size: 1rem;
   color: #555;
 }
-
 .testimonial-card img {
   width: 50px;
   height: 50px;
   object-fit: cover;
 }
-
 .testimonial-carousel-control {
   width: 40px;
   height: 40px;
@@ -125,15 +109,12 @@ body {
   z-index: 2;
   cursor: pointer;
 }
-
 .testimonial-carousel-control-prev {
   left: -50px;
 }
-
 .testimonial-carousel-control-next {
   right: -50px;
 }
-
 .slick-dots {
   list-style: none;
   display: flex;
@@ -141,7 +122,6 @@ body {
   margin-top: 20px;
   padding: 0;
 }
-
 .slick-dots li {
   width: 10px;
   height: 10px;
@@ -150,11 +130,9 @@ body {
   border-radius: 50%;
   cursor: pointer;
 }
-
 .slick-dots li.slick-active {
   background-color: #0056b3;
 }
-
 .my-slider .slick-dots {
   bottom: -15px;
   left: 50%;
@@ -166,12 +144,10 @@ body {
   padding: 0;
   margin: 0;
 }
-
 .my-slider .slick-dots li {
   padding: 5px;
   cursor: pointer;
 }
-
 .my-slider .slick-dots li::before {
   content: "";
   display: inline-block;
@@ -181,9 +157,8 @@ body {
   border-radius: 50%;
   transition: background-color 0.3s;
 }
-
 .my-slider .slick-dots li.active::before {
-  background-color: #007bff; /* Bootstrap primary color */
+  background-color: #007bff;
 }
 .card-body {
   display: flex;
@@ -196,8 +171,6 @@ body {
   gap: 40px;
   flex-shrink: 0;
 }
-
-/* *review-banner */
 .review-banners {
   width: 100%;
   background: #dedede;
@@ -207,18 +180,15 @@ body {
   position: relative;
   z-index: 1;
 }
-
 .review-container {
   padding: 10px 20px 50px;
 }
-
 .review-banners__title {
   margin: 32px 0px 20px;
   color: #25282b;
   font-weight: 700;
   line-height: 58px;
 }
-
 .about-section__content {
   margin: 32px 20px 20px;
   color: #52575c;
@@ -226,25 +196,21 @@ body {
   font-weight: 400;
   line-height: 26.72px;
 }
-
 .testimonial-card {
   border: 1px solid #007bff;
   border-radius: 10px;
   height: 326.5px;
 }
-
 .testimonial-card p {
   font-size: 1rem;
   color: #555;
 }
-
 .testimonial-card img {
   width: 50px;
   height: 50px;
   object-fit: cover;
   border-radius: 50%;
 }
-
 .card-body {
   width: 100%;
   height: 300px;
