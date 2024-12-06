@@ -3,13 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dịch vụ của Apptech</title>
+    <title>Trang Chủ AppTech</title>
+    <meta name="theme-color" content="#0d6efd" />
+    <link rel="icon" href="assets/img/logo/icon-head.png" type="image/x-icon" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <script src="assets/js/include.js" defer></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/css/home.css" />
+    <script src="assets/js/include.js" defer></script>
   </head>
   <body>
     <!-- *thanh nav -->
@@ -26,7 +33,11 @@
         <h1 class="hero-section__content__title">
           Biến Tầm Nhìn Của Bạn Thành Hiện Thực Với Công Nghệ
         </h1>
-        <a href="#" class="btn btn-primary"><b>Liên hệ tư vấn</b></a>
+        <botton
+          class="btn btn-primary"
+          onclick="window.location.href='contact.html'"
+          ><b>Liên hệ tư vấn</b></botton
+        >
       </div>
     </div>
 
@@ -50,6 +61,7 @@
           </p>
           <button
             class="section-about__botton btn btn-primary btn-lg rounded-pill"
+            onclick="window.location.href='about.html'"
           >
             Tìm hiểu thêm
           </button>
@@ -97,9 +109,7 @@
               chúng tôi đồng hành cùng doanh nghiệp trong suốt quá trình vận
               hành hệ thống.
             </p>
-            <div class="feature-card__footer">
-              <a href="#">Xem chi tiết →</a>
-            </div>
+            <div class="feature-card__footer"></div>
           </div>
         </div>
         <!-- *Card 2 -->
@@ -132,9 +142,7 @@
               lượng yêu cầu (ticket) đang xử lý, quá hạn, chưa phân công và tổng
               số ticket theo tháng đều được hiển thị chi tiết.
             </p>
-            <div class="feature-card__footer">
-              <a href="#">Xem chi tiết →</a>
-            </div>
+            <div class="feature-card__footer"></div>
           </div>
         </div>
         <!-- *Card 3 -->
@@ -189,9 +197,7 @@
               tăng. Điều này giúp giảm tải cho server và đường truyền, đồng thời
               cải thiện trải nghiệm người dùng.
             </p>
-            <div class="feature-card__footer">
-              <a href="#">Xem chi tiết →</a>
-            </div>
+            <div class="feature-card__footer"></div>
           </div>
         </div>
         <!-- *Card 4 -->
@@ -221,9 +227,7 @@
               các nhu cầu truy xuất dữ liệu của người dùng và phù hợp với các
               danh sách riêng biệt theo từng khách hàng.
             </p>
-            <div class="feature-card__footer">
-              <a href="#">Xem chi tiết →</a>
-            </div>
+            <div class="feature-card__footer"></div>
           </div>
         </div>
         <!-- *Card 5 -->
@@ -270,9 +274,7 @@
               hoặc điều chỉnh quyền truy cập cho từng vai trò theo yêu cầu, giúp
               đảm bảo quyền riêng tư và bảo mật cho doanh nghiệp.
             </p>
-            <div class="feature-card__footer">
-              <a href="#">Xem chi tiết →</a>
-            </div>
+            <div class="feature-card__footer"></div>
           </div>
         </div>
         <!-- *Card 6 -->
@@ -303,9 +305,7 @@
               khi nào và đã chỉnh sửa dữ liệu ra sao, giúp dễ dàng quản lý và
               bảo vệ tính minh bạch.
             </p>
-            <div class="feature-card__footer">
-              <a href="#">Xem chi tiết →</a>
-            </div>
+            <div class="feature-card__footer"></div>
           </div>
         </div>
         <!-- *Card 7 -->
@@ -336,9 +336,7 @@
               thường gặp và hướng dẫn sẽ tự động hiển thị, hỗ trợ kịp thời trong
               quá trình sử dụng.
             </p>
-            <div class="feature-card__footer">
-              <a href="#">Xem chi tiết →</a>
-            </div>
+            <div class="feature-card__footer"></div>
           </div>
         </div>
         <!-- *Card 8 -->
@@ -369,13 +367,12 @@
               này giúp nâng cao chất lượng dịch vụ và cải thiện hệ thống liên
               tục.
             </p>
-            <div class="feature-card__footer">
-              <a href="#">Xem chi tiết →</a>
-            </div>
+            <div class="feature-card__footer"></div>
           </div>
         </div>
       </div>
     </div>
+
     <!-- *banner hạ tầng -->
     <div class="d-flex justify-content-center align-items-center mt-5">
       <div class="infrastructure-banner">
@@ -389,11 +386,12 @@
             sẵn sàng, chúng tôi giúp triển khai các dự án nhanh chóng, linh hoạt
             và chủ động.
           </p>
-          <div
-            class="infrastructure-banner__bottom btn btn-primary rounded-pill"
+          <botton
+            class="infrastructure-banner__bottom btn btn-primary rounded-pill notUpdatedBtn"
+            id=""
           >
             Tìm hiểu thêm
-          </div>
+          </botton>
         </div>
         <div class="infrastructure-banner__img">
           <img
@@ -413,7 +411,7 @@
           tùy chỉnh, đáp ứng chính xác nhu cầu riêng của từng doanh nghiệp.
         </p>
         <button
-          class="software-banners__botton btn btn-primary btn-lg rounded-pill"
+          class="software-banners__botton btn btn-primary btn-lg rounded-pill notUpdatedBtn"
         >
           Tìm hiểu thêm
         </button>
@@ -425,15 +423,39 @@
         />
       </div>
     </div>
-
+    <!-- *các thông báo -->
+    <div
+      class="toast-container position-fixed bottom-0 end-0 p-3"
+      id="toastContainer"
+    >
+      <div
+        class="toast"
+        id="contactToast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="toast-header bg-warning">
+          <strong class="me-auto">Thông báo</strong>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="toast-body bg-warning-subtle">
+          Trang chưa cập nhật. Thông cảm!
+        </div>
+      </div>
+    </div>
     <!-- *footer -->
     <div class="mt-5" data-include="components/footer.html"></div>
 
-    <!-- script -->
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
-    />
+
+    <!-- Notifications JS -->
+    <script src="assets/js/notifications.js"></script>
   </body>
 </html>

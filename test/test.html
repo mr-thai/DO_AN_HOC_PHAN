@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero Section with Toast</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .hero-section {
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        color: white;
+        text-align: center;
+      }
+      .hero-section__content__title {
+        font-size: 3rem;
+        margin-bottom: 20px;
+      }
+      .toast-container {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        z-index: 1055;
+      }
+      .toast {
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="hero-section"
+      style="
+        background-image: url('assets/img/banner/banner_big/home/hero-section.jpg');
+      "
+    >
+      <div class="hero-section__content">
+        <h1 class="hero-section__content__title">
+          Biến Tầm Nhìn Của Bạn Thành Hiện Thực Với Công Nghệ
+        </h1>
+        <button class="btn btn-primary" id="contactBtn">
+          <b>Liên hệ tư vấn</b>
+        </button>
+      </div>
+    </div>
+    <div
+      class="toast-container position-fixed bottom-0 end-0 p-3"
+      id="toastContainer"
+    >
+      <div
+        class="toast bg-success text-white"
+        id="contactToast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="toast-header">
+          <strong class="me-auto">Thông báo</strong>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="toast-body">
+          Cảm ơn bạn đã liên hệ. Chúng tôi sẽ sớm phản hồi lại!
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      document
+        .getElementById("contactBtn")
+        .addEventListener("click", function () {
+          var toast = new bootstrap.Toast(
+            document.getElementById("contactToast")
+          );
+          toast.show();
+        });
+    </script>
+  </body>
+</html>

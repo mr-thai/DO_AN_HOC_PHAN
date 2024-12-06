@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dịch vụ của Apptech</title>
+    <title>Project mobile AppTech</title>
+    <meta name="theme-color" content="#0d6efd" />
+    <link rel="icon" href="assets/img/logo/icon-head.png" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -16,6 +18,7 @@
     <link rel="stylesheet" href="assets/css/project.css" />
     <script src="assets/js/include.js" defer></script>
     <script src="assets/js/searchAndFilter.js" defer></script>
+    <script src="assets/js/notifications.js"></script>
   </head>
   <body>
     <div data-include="components/header.html"></div>
@@ -57,263 +60,255 @@
     <!-- *các thẻ project -->
     <div class="container my-5">
       <!-- *Card 1 -->
-      <div class="project-item desktop quan-ly cong-nghe">
+      <div class="project-item mobile suc-khoe">
         <div class="row project-card card-hover">
           <div class="col-md-3">
             <img
-              src="assets/img/project/desktop/pic_1.png"
-              alt="Quản lý hệ thống IT"
+              src="assets/img/project/mobile/pic-1.jpg"
+              alt="Ứng dụng chăm sóc sức khỏe cá nhân"
             />
           </div>
           <div class="col-md-9">
-            <h5>Quản lý hệ thống IT doanh nghiệp</h5>
+            <h5>Ứng dụng chăm sóc sức khỏe cá nhân</h5>
             <p>
-              Giải pháp quản lý hệ thống CNTT toàn diện giúp doanh nghiệp theo
-              dõi hiệu suất máy chủ, bảo mật dữ liệu và hỗ trợ các hoạt động vận
-              hành kỹ thuật. Ứng dụng này cho phép tối ưu hóa tài nguyên phần
-              cứng, giám sát trạng thái hệ thống theo thời gian thực và dự báo
-              rủi ro dựa trên phân tích AI.
+              Giúp người dùng theo dõi các chỉ số sức khỏe như nhịp tim, lượng
+              nước uống mỗi ngày, và lượng calo tiêu thụ. Ứng dụng hỗ trợ nhắc
+              nhở tập thể dục và đưa ra gợi ý chế độ ăn phù hợp.
             </p>
             <div class="tech-icons">
-              <i class="fab fa-linux text-secondary"></i>
-              <i class="fab fa-python text-success"></i>
-              <i class="fab fa-java text-warning"></i>
+              <i class="fab fa-react text-primary"></i>
+              <i class="fab fa-node text-success"></i>
+              <i class="fab fa-docker text-info"></i>
             </div>
             <hr />
-            <p class="update-time">Last updated 20 mins ago</p>
+            <p class="update-time">Last updated 2 days ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="project-item mobile thoi-quen">
+        <div class="row project-card card-hover">
+          <div class="col-md-3">
+            <img
+              src="assets/img/project/mobile/pic-2.avif"
+              alt="Ứng dụng theo dõi thói quen hàng ngày"
+            />
+          </div>
+          <div class="col-md-9">
+            <h5>Ứng dụng theo dõi thói quen hàng ngày</h5>
+            <p>
+              Hỗ trợ người dùng tạo danh sách thói quen cần hoàn thành mỗi ngày.
+              Theo dõi tiến độ và cung cấp báo cáo định kỳ để duy trì động lực.
+            </p>
+            <div class="tech-icons">
+              <i class="fab fa-js-square text-warning"></i>
+              <i class="fab fa-vuejs text-success"></i>
+              <i class="fab fa-css3-alt text-primary"></i>
+            </div>
+            <hr />
+            <p class="update-time">Last updated 5 hours ago</p>
           </div>
         </div>
       </div>
 
-      <!-- *Card 2 -->
-      <div class="project-item desktop quan-ly kinh-te">
+      <div class="project-item mobile ai">
         <div class="row project-card card-hover">
           <div class="col-md-3">
             <img
-              src="assets/img/project/desktop/pic_2.png"
-              alt="Quản lý chuỗi cung ứng"
+              src="assets/img/project/mobile/pic-3.webp"
+              alt="Hệ thống hỗ trợ học tập AI"
             />
           </div>
           <div class="col-md-9">
-            <h5>Phần mềm quản lý chuỗi cung ứng</h5>
+            <h5>Hệ thống hỗ trợ học tập AI</h5>
             <p>
-              Giúp doanh nghiệp tối ưu hóa quy trình chuỗi cung ứng, giảm chi
-              phí vận hành và dự báo nhu cầu bằng công nghệ AI.
+              Sử dụng trí tuệ nhân tạo để gợi ý tài liệu học tập phù hợp và giải
+              đáp câu hỏi của người học. Dễ dàng theo dõi lộ trình học tập cá
+              nhân hóa.
             </p>
             <div class="tech-icons">
-              <i class="fab fa-java text-warning"></i>
-              <i class="fab fa-react text-info"></i>
-              <i class="fab fa-python text-success"></i>
+              <i class="fab fa-python text-secondary"></i>
+              <i class="fab fa-aws text-warning"></i>
+              <i class="fab fa-linux text-dark"></i>
             </div>
             <hr />
-            <p class="update-time">Last updated 25 mins ago</p>
+            <p class="update-time">Last updated 3 days ago</p>
           </div>
         </div>
       </div>
 
-      <!-- *Card 3 -->
-      <div class="project-item desktop lap-trinh giao-duc">
+      <div class="project-item mobile quan-ly">
         <div class="row project-card card-hover">
           <div class="col-md-3">
             <img
-              src="assets/img/project/desktop/pic_3.png"
-              alt="Học lập trình"
+              src="assets/img/project/mobile/pic-4.png"
+              alt="Hệ thống quản lý tài chính cá nhân"
             />
           </div>
           <div class="col-md-9">
-            <h5>Ứng dụng học lập trình tương tác</h5>
+            <h5>Hệ thống quản lý tài chính cá nhân</h5>
             <p>
-              Ứng dụng cung cấp bài học lập trình thực tế với giao diện tương
-              tác, phù hợp cho người mới bắt đầu và chuyên gia.
+              Giúp theo dõi thu nhập và chi tiêu hằng ngày. Cung cấp báo cáo tài
+              chính chi tiết và đưa ra lời khuyên để tiết kiệm hiệu quả.
+            </p>
+            <div class="tech-icons">
+              <i class="fab fa-html5 text-danger"></i>
+              <i class="fab fa-node text-success"></i>
+              <i class="fab fa-database text-info"></i>
+            </div>
+            <hr />
+            <p class="update-time">Last updated 12 hours ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-item mobile cong-nghe">
+        <div class="row project-card card-hover">
+          <div class="col-md-3">
+            <img
+              src="assets/img/project/mobile/pic-5.jpg"
+              alt="Ứng dụng quản lý thiết bị IoT"
+            />
+          </div>
+          <div class="col-md-9">
+            <h5>Ứng dụng quản lý thiết bị IoT</h5>
+            <p>
+              Điều khiển và theo dõi các thiết bị IoT trong nhà như đèn, máy
+              lạnh, và camera từ xa qua smartphone. Tăng cường bảo mật dữ liệu
+              người dùng.
+            </p>
+            <div class="tech-icons">
+              <i class="fab fa-angular text-danger"></i>
+              <i class="fab fa-python text-info"></i>
+              <i class="fab fa-docker text-primary"></i>
+            </div>
+            <hr />
+            <p class="update-time">Last updated 1 week ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-item mobile giai-tri">
+        <div class="row project-card card-hover">
+          <div class="col-md-3">
+            <img
+              src="assets/img/project/mobile/pic-6.jpg"
+              alt="Ứng dụng phát nhạc thông minh"
+            />
+          </div>
+          <div class="col-md-9">
+            <h5>Ứng dụng phát nhạc thông minh</h5>
+            <p>
+              Gợi ý danh sách phát nhạc dựa trên tâm trạng và sở thích cá nhân.
+              Kết hợp trí tuệ nhân tạo để nâng cao trải nghiệm người dùng.
+            </p>
+            <div class="tech-icons">
+              <i class="fab fa-js-square text-warning"></i>
+              <i class="fab fa-react text-primary"></i>
+              <i class="fab fa-node text-success"></i>
+            </div>
+            <hr />
+            <p class="update-time">Last updated 2 weeks ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-item mobile the-thao">
+        <div class="row project-card card-hover">
+          <div class="col-md-3">
+            <img
+              src="assets/img/project/mobile/pic-7.jpg"
+              alt="Ứng dụng theo dõi kết quả thể thao"
+            />
+          </div>
+          <div class="col-md-9">
+            <h5>Ứng dụng theo dõi kết quả thể thao</h5>
+            <p>
+              Cập nhật kết quả trực tiếp từ các giải đấu lớn và tin tức thể thao
+              nổi bật. Cho phép người dùng cá nhân hóa danh sách đội yêu thích.
+            </p>
+            <div class="tech-icons">
+              <i class="fab fa-bootstrap text-purple"></i>
+              <i class="fab fa-js-square text-warning"></i>
+              <i class="fab fa-css3-alt text-primary"></i>
+            </div>
+            <hr />
+            <p class="update-time">Last updated 4 days ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-item mobile am-thuc">
+        <div class="row project-card card-hover">
+          <div class="col-md-3">
+            <img
+              src="assets/img/project/mobile/pic-8.jpg"
+              alt="Ứng dụng gợi ý món ăn"
+            />
+          </div>
+          <div class="col-md-9">
+            <h5>Ứng dụng gợi ý món ăn</h5>
+            <p>
+              Gợi ý các món ăn dựa trên nguyên liệu sẵn có trong nhà. Tích hợp
+              công thức nấu ăn chi tiết và danh sách mua sắm tiện lợi.
             </p>
             <div class="tech-icons">
               <i class="fab fa-html5 text-danger"></i>
               <i class="fab fa-js-square text-warning"></i>
-              <i class="fab fa-node-js text-success"></i>
+              <i class="fab fa-css3-alt text-primary"></i>
             </div>
             <hr />
-            <p class="update-time">Last updated 15 mins ago</p>
+            <p class="update-time">Last updated 1 day ago</p>
           </div>
         </div>
       </div>
 
-      <!-- *Card 4 -->
-      <div class="project-item desktop quan-ly ai">
+      <div class="project-item mobile kinh-te">
         <div class="row project-card card-hover">
           <div class="col-md-3">
             <img
-              src="assets/img/project/desktop/pic_4.png"
-              alt="Quản lý nhân sự"
+              src="assets/img/project/mobile/pic-9.jpg"
+              alt="Ứng dụng phân tích thị trường"
             />
           </div>
           <div class="col-md-9">
-            <h5>Ứng dụng quản lý nhân sự</h5>
+            <h5>Ứng dụng phân tích thị trường</h5>
             <p>
-              Hệ thống giúp theo dõi hiệu suất nhân viên, quản lý bảng lương và
-              tự động hóa các công việc hành chính nhân sự.
+              Cung cấp dữ liệu thị trường theo thời gian thực, phân tích xu
+              hướng giá cả và đưa ra dự đoán để hỗ trợ các nhà đầu tư cá nhân.
             </p>
             <div class="tech-icons">
-              <i class="fab fa-python text-success"></i>
-              <i class="fab fa-react text-info"></i>
-              <i class="fab fa-java text-warning"></i>
+              <i class="fab fa-react text-primary"></i>
+              <i class="fab fa-python text-info"></i>
+              <i class="fab fa-linux text-secondary"></i>
             </div>
             <hr />
-            <p class="update-time">Last updated 30 mins ago</p>
+            <p class="update-time">Last updated 6 hours ago</p>
           </div>
         </div>
       </div>
 
-      <!-- *Card 5 -->
-      <div class="project-item desktop du-lich ai">
+      <div class="project-item mobile lap-trinh">
         <div class="row project-card card-hover">
           <div class="col-md-3">
             <img
-              src="assets/img/project/desktop/pic_5.png"
-              alt="Đặt phòng khách sạn"
+              src="assets/img/project/mobile/pic-10.png"
+              alt="Ứng dụng học lập trình cơ bản"
             />
           </div>
           <div class="col-md-9">
-            <h5>Hệ thống đặt phòng khách sạn thông minh</h5>
+            <h5>Ứng dụng học lập trình cơ bản</h5>
             <p>
-              Ứng dụng hỗ trợ khách du lịch tìm kiếm và đặt phòng khách sạn
-              nhanh chóng, với tính năng gợi ý dựa trên sở thích.
+              Cung cấp các bài học lập trình cơ bản từ HTML, CSS đến JavaScript.
+              Hỗ trợ thực hành trực tiếp và kiểm tra kiến thức ngay trên ứng
+              dụng.
             </p>
             <div class="tech-icons">
-              <i class="fab fa-swift text-warning"></i>
-              <i class="fab fa-react text-info"></i>
-              <i class="fab fa-node-js text-success"></i>
-            </div>
-            <hr />
-            <p class="update-time">Last updated 50 mins ago</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- *Card 6 -->
-      <div class="project-item desktop nghe-thuat cong-nghe">
-        <div class="row project-card card-hover">
-          <div class="col-md-3">
-            <img
-              src="assets/img/project/desktop/pic_6.png"
-              alt="Thiết kế logo online"
-            />
-          </div>
-          <div class="col-md-9">
-            <h5>Công cụ thiết kế logo online</h5>
-            <p>
-              Một nền tảng thiết kế trực tuyến, cho phép người dùng sáng tạo
-              logo chuyên nghiệp chỉ trong vài phút.
-            </p>
-            <div class="tech-icons">
+              <i class="fab fa-js-square text-warning"></i>
               <i class="fab fa-html5 text-danger"></i>
               <i class="fab fa-css3-alt text-primary"></i>
-              <i class="fab fa-angular text-danger"></i>
             </div>
             <hr />
-            <p class="update-time">Last updated 5 mins ago</p>
-          </div>
-        </div>
-      </div>
-      <!-- *Card 7 -->
-      <div class="project-item desktop kinh-te cong-nghe">
-        <div class="row project-card card-hover">
-          <div class="col-md-3">
-            <img
-              src="assets/img/project/desktop/pic_7.png"
-              alt="Phân tích tài chính"
-            />
-          </div>
-          <div class="col-md-9">
-            <h5>Nền tảng phân tích thị trường tài chính</h5>
-            <p>
-              Cung cấp dữ liệu thời gian thực về thị trường, hỗ trợ nhà đầu tư
-              đưa ra quyết định thông minh với biểu đồ trực quan.
-            </p>
-            <div class="tech-icons">
-              <i class="fab fa-python text-success"></i>
-              <i class="fab fa-node-js text-success"></i>
-              <i class="fab fa-js-square text-warning"></i>
-            </div>
-            <hr />
-            <p class="update-time">Last updated 40 mins ago</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- *Card 8 -->
-      <div class="project-item desktop suc-khoe">
-        <div class="row project-card card-hover">
-          <div class="col-md-3">
-            <img
-              src="assets/img/project/desktop/pic_8.png"
-              alt="Theo dõi dinh dưỡng"
-            />
-          </div>
-          <div class="col-md-9">
-            <h5>Ứng dụng theo dõi dinh dưỡng cá nhân</h5>
-            <p>
-              Theo dõi lượng calo và chế độ ăn hàng ngày, đưa ra lời khuyên để
-              cải thiện sức khỏe và đạt mục tiêu dinh dưỡng.
-            </p>
-            <div class="tech-icons">
-              <i class="fab fa-python text-success"></i>
-              <i class="fab fa-react text-info"></i>
-              <i class="fab fa-html5 text-danger"></i>
-            </div>
-            <hr />
-            <p class="update-time">Last updated 12 mins ago</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- *Card 9 -->
-      <div class="project-item desktop thoi-quen giao-duc">
-        <div class="row project-card card-hover">
-          <div class="col-md-3">
-            <img
-              src="assets/img/project/desktop/pic_9.png"
-              alt="Phát triển kỹ năng"
-            />
-          </div>
-          <div class="col-md-9">
-            <h5>Ứng dụng phát triển kỹ năng cá nhân</h5>
-            <p>
-              Hướng dẫn người dùng nâng cao kỹ năng mềm, quản lý thời gian và
-              phát triển tư duy sáng tạo thông qua bài tập thực hành.
-            </p>
-            <div class="tech-icons">
-              <i class="fab fa-js-square text-warning"></i>
-              <i class="fab fa-react text-info"></i>
-              <i class="fab fa-node-js text-success"></i>
-            </div>
-            <hr />
-            <p class="update-time">Last updated 55 mins ago</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- *Card 10 -->
-      <div class="project-item desktop ai chat">
-        <div class="row project-card card-hover">
-          <div class="col-md-3">
-            <img
-              src="assets/img/project/desktop/pic_10.png"
-              alt="Chatbot hỗ trợ khách hàng"
-            />
-          </div>
-          <div class="col-md-9">
-            <h5>Ứng dụng chatbot hỗ trợ khách hàng</h5>
-            <p>
-              Chatbot tự động trả lời câu hỏi của khách hàng, cung cấp hỗ trợ
-              24/7 với công nghệ xử lý ngôn ngữ tự nhiên (NLP).
-            </p>
-            <div class="tech-icons">
-              <i class="fab fa-node-js text-success"></i>
-              <i class="fab fa-python text-success"></i>
-              <i class="fab fa-react text-info"></i>
-            </div>
-            <hr />
-            <p class="update-time">Last updated 18 mins ago</p>
+            <p class="update-time">Last updated 8 hours ago</p>
           </div>
         </div>
       </div>

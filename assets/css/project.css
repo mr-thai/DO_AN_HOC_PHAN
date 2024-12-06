@@ -10,6 +10,9 @@
 }
 
 /* *Tùy chỉnh card */
+.project-item {
+  cursor: pointer;
+}
 /* Chung cho các thẻ project-card */
 .project-card {
   display: flex;

@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Apptech - Log in</title>
+    <title>Apptech - Sign up</title>
+    <meta name="theme-color" content="#0d6efd" />
+    <link rel="icon" href="assets/img/logo/icon-head.png" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,6 +16,7 @@
     />
     <link rel="stylesheet" href="assets/css/signup.css" />
     <script src="assets/js/include.js" defer></script>
+    <script src="assets/js/notifications.js"></script>
   </head>
   <body>
     <div data-include="components/header.html"></div>
@@ -23,7 +26,7 @@
           <i class="bi bi-person-circle"></i> Đăng ký tài khoản
         </div>
         <div class="signup-body">
-          <form>
+          <form id="signupForm">
             <!-- Email Input -->
             <div class="form-group">
               <input
@@ -70,6 +73,61 @@
         </div>
       </div>
     </div>
+    <!-- *thong báo -->
+    <!-- Toast Đăng Ký -->
+    <div
+      class="toast-container position-fixed bottom-0 end-0 p-3"
+      id="signupToastContainer"
+    >
+      <!-- Toast: Đăng ký thành công -->
+      <div
+        class="toast"
+        id="signupSuccessToast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="toast-header bg-success">
+          <strong class="me-auto text-white">Đăng ký thành công</strong>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="toast-body bg-success-subtle text-dark">
+          Tài khoản đã được tạo thành công. Bạn có thể đăng nhập ngay bây giờ!
+        </div>
+      </div>
+
+      <!-- Toast: Đăng ký thất bại -->
+      <div
+        class="toast"
+        id="signupErrorToast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="toast-header bg-danger">
+          <strong class="me-auto text-white">Đăng ký thất bại</strong>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="toast-body bg-danger-subtle text-dark">
+          Có lỗi xảy ra. Vui lòng kiểm tra thông tin và thử lại.
+        </div>
+      </div>
+    </div>
+
     <div data-include="components/footer.html"></div>
+    <!-- script -->
+    <script src="assets/js/notifications.js" defer></script>
+    <script src="assets/js/signup.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

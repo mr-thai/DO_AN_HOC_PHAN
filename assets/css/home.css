@@ -200,22 +200,11 @@ body {
   color: #666;
   font-size: 14px;
   margin-bottom: auto;
-}
-
-.feature-card .feature-card__footer {
-  text-align: right;
   padding-top: 10px;
   margin-top: auto;
 }
 
-.feature-card .feature-card__footer a {
-  color: #0056b3;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.feature-card .feature-card__footer a:hover {
-  text-decoration: underline;
+.feature-card .feature-card__footer {
 }
 
 @media (max-width: 768px) {
@@ -282,7 +271,6 @@ body {
   height: auto;
 }
 
-/* Media Queries for responsiveness */
 @media (max-width: 768px) {
   .infrastructure-banner {
     flex-direction: column-reverse;
