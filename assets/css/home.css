@@ -91,20 +91,20 @@ body {
   line-height: 1.6;
   margin-bottom: 15px;
 }
-.section-about__botton {
+.section-about__button {
   margin: 20px 0 0 0;
   background: linear-gradient(135deg, #4facfe, #0056b3);
   border-radius: 50px;
   border: none;
   transition: background-color 0.3s ease-in-out;
 }
-.section-about__botton:hover {
+.section-about__button:hover {
   background: linear-gradient(135deg, #0056b3, #4facfe);
   transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(79, 172, 254, 0.6);
   cursor: pointer;
 }
-.section-about__botton:active {
+.section-about__button:active {
   transform: scale(0.98);
   box-shadow: 0 4px 10px rgba(79, 172, 254, 0.3);
 }
@@ -318,20 +318,20 @@ body {
   height: 409px;
   flex-shrink: 0;
 }
-.software-banners__botton {
+.software-banners__button {
   margin: 20px 0 0 0;
   background: linear-gradient(135deg, #4facfe, #0056b3);
   border-radius: 50px;
   border: none;
   transition: background-color 0.3s ease-in-out;
 }
-.software-banners__botton:hover {
+.software-banners__button:hover {
   background: linear-gradient(135deg, #0056b3, #4facfe);
   transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(79, 172, 254, 0.6);
   cursor: pointer;
 }
-.software-banners__botton:active {
+.software-banners__button:active {
   transform: scale(0.98);
   box-shadow: 0 4px 10px rgba(79, 172, 254, 0.3);
 }
